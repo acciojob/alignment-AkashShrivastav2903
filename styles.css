@@ -22,3 +22,10 @@ td{
 .t-image{
 	margin:auto;
 }
+
+.green{
+	background-color: green;
+}
+.blue{
+	background-color: blue;
+}
