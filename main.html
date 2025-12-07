@@ -1,85 +1,279 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title>HTML Assignment 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .description {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        /* Table Styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        table.middle {
+            margin: 30px auto;
+            width: 80%;
+        }
+        
+        td, th {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: left;
+        }
+        
+        /* Center and Right Classes */
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        /* Background Color Classes */
+        .green {
+            background-color: #d4edda;
+        }
+        
+        .blue {
+            background-color: #d1ecf1;
+        }
+        
+        /* Table-specific styling */
+        #table-1 {
+            margin-top: 40px;
+        }
+        
+        #table-2 td {
+            height: 40px;
+        }
+        
+        #table-3 img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+        }
+        
+        .legend h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .legend ul {
+            padding-left: 20px;
+        }
+        
+        .legend li {
+            margin-bottom: 5px;
+        }
+        
+        .table-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .code {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<h1>HTML Assignment #3</h1>
-	<table id="table-1" class="middle">
-		<tr>
-			<td id="t11">left</td>
-			<td id="t12" class="center">center</td>
-			<td id="t13" class="right">right</td>
-		</tr>
-		<tr>
-			<td id="t11">left</td>
-			<td id="t12" class="center">center</td>
-			<td id="t13" class="right">right</td>
-		</tr>
-		<tr>
-			<td id="t11">left</td>
-			<td id="t12" class="center">center</td>
-			<td id="t13" class="right">right</td>
-		</tr>
-	</table>
-
-	<br>
-	<table id="table-2">
-		<tr id="t21">
-			<td colspan="6"></td>
-		</tr>
-		<tr>
-			<td rowspan="4"></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		<tr>
-			<td></td>
-			<td colspan="3"></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td colspan="3"></td>
-			<td></td>
-		</tr>
-		<tr>
-			<!-- <td rowspan="4"></td> -->
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="6"></td>
-		</tr>
-	</table>
-
-	<br>
-	<table id="table-3">
-		<tr>
-			<td class="green"></td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" id="t-image">
-			</td>
-		</tr>
-		<tr>
-			<td class="blue"></td>
-		</tr>
-	</table>
-
+    <div class="container">
+        <h1>HTML Assignment #3</h1>
+        
+        <div class="description">
+            <p>This webpage demonstrates the use of HTML tables with specific styling and structural requirements as outlined in the assignment instructions.</p>
+            <p>Each table below implements different features including: classes, IDs, colspan attributes, embedded images, and custom background colors.</p>
+        </div>
+        
+        <h2 class="table-title">Table 1: 3x3 Table with Cell Styling</h2>
+        <table id="table-1" class="middle">
+            <tr>
+                <td id="t11">left</td>
+                <td id="t12" class="center">center</td>
+                <td id="t13" class="right">right</td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td class="center">center</td>
+                <td class="right">right</td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td class="center">center</td>
+                <td class="right">right</td>
+            </tr>
+        </table>
+        
+        <h2 class="table-title">Table 2: 6x6 Table with Colspan</h2>
+        <table id="table-2" class="middle">
+            <tr>
+                <td id="t21" colspan="6">This cell spans all 6 columns</td>
+            </tr>
+            <tr>
+                <td>Row 2, Col 1</td>
+                <td>Row 2, Col 2</td>
+                <td>Row 2, Col 3</td>
+                <td>Row 2, Col 4</td>
+                <td>Row 2, Col 5</td>
+                <td>Row 2, Col 6</td>
+            </tr>
+            <tr>
+                <td>Row 3, Col 1</td>
+                <td>Row 3, Col 2</td>
+                <td>Row 3, Col 3</td>
+                <td>Row 3, Col 4</td>
+                <td>Row 3, Col 5</td>
+                <td>Row 3, Col 6</td>
+            </tr>
+            <tr>
+                <td>Row 4, Col 1</td>
+                <td>Row 4, Col 2</td>
+                <td>Row 4, Col 3</td>
+                <td>Row 4, Col 4</td>
+                <td>Row 4, Col 5</td>
+                <td>Row 4, Col 6</td>
+            </tr>
+            <tr>
+                <td>Row 5, Col 1</td>
+                <td>Row 5, Col 2</td>
+                <td>Row 5, Col 3</td>
+                <td>Row 5, Col 4</td>
+                <td>Row 5, Col 5</td>
+                <td>Row 5, Col 6</td>
+            </tr>
+            <tr>
+                <td>Row 6, Col 1</td>
+                <td>Row 6, Col 2</td>
+                <td>Row 6, Col 3</td>
+                <td>Row 6, Col 4</td>
+                <td>Row 6, Col 5</td>
+                <td>Row 6, Col 6</td>
+            </tr>
+        </table>
+        
+        <h2 class="table-title">Table 3: Table with Image and Colored Rows</h2>
+        <table id="table-3" class="middle">
+            <tr class="green">
+                <td colspan="3">First Row with Green Background</td>
+            </tr>
+            <tr>
+                <td>Left Cell</td>
+                <td id="t-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                         alt="Mountain landscape" width="300">
+                </td>
+                <td>Right Cell</td>
+            </tr>
+            <tr>
+                <td>Description 1</td>
+                <td class="center">Mountain Image</td>
+                <td>Description 2</td>
+            </tr>
+            <tr class="blue">
+                <td colspan="3">Last Row with Blue Background</td>
+            </tr>
+        </table>
+        
+        <div class="legend">
+            <h3>Implementation Details</h3>
+            <ul>
+                <li><strong>Page Title:</strong> "HTML Assignment 3"</li>
+                <li><strong>Main Heading:</strong> Centered "HTML Assignment #3"</li>
+                <li><strong>All Tables:</strong> Have class <span class="code">"middle"</span> for centering</li>
+                <li><strong>Table 1:</strong> 
+                    <ul>
+                        <li>ID: <span class="code">"table-1"</span></li>
+                        <li>Cell IDs: <span class="code">"t11"</span>, <span class="code">"t12"</span>, <span class="code">"t13"</span></li>
+                        <li>Center column cells have class <span class="code">"center"</span></li>
+                        <li>Right column cells have class <span class="code">"right"</span></li>
+                    </ul>
+                </li>
+                <li><strong>Table 2:</strong>
+                    <ul>
+                        <li>ID: <span class="code">"table-2"</span></li>
+                        <li>First cell ID: <span class="code">"t21"</span></li>
+                        <li>First cell has <span class="code">colspan="6"</span></li>
+                    </ul>
+                </li>
+                <li><strong>Table 3:</strong>
+                    <ul>
+                        <li>ID: <span class="code">"table-3"</span></li>
+                        <li>Image cell ID: <span class="code">"t-image"</span></li>
+                        <li>First row: class <span class="code">"green"</span></li>
+                        <li>Last row: class <span class="code">"blue"</span></li>
+                    </ul>
+                </li>
+                <li><strong>Table Styling:</strong> 1px solid black borders, 1px spacing, 1px cell padding</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>HTML Assignment #3 - Table Implementation</p>
+        </footer>
+    </div>
 </body>
-
 </html>
